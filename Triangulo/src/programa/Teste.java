@@ -8,7 +8,7 @@ public class Teste {
 
         Scanner sc = new Scanner(System.in);
         
-        //Criação da variavel de objeto da classe Triangle
+        //Criação da instancia do objeto da classe Triangle
         Triangle x,y;
         x = new Triangle();
         y = new Triangle();
