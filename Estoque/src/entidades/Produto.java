@@ -1,10 +1,9 @@
 package entidades; // Correct package declaration
 
 public class Produto {
-    private String nome;
-    private double preco;
-    private int quantidade;
-
+    public String nome;
+    public double preco;
+    public int quantidade;
 
     public double valorTotalEmEstoque() {
         return preco * quantidade;
@@ -18,10 +17,19 @@ public class Produto {
         this.quantidade -= quantidade;
     }
 
-    @Override
+    
     public String toString() {
-        return nome + ", $ " + String.format("%.2f", preco) + ", " + quantidade + " unidades, Total: $ "
-                + String.format("%.2f", valorTotalEmEstoque());
+        return "\n~~~~~~~~~~~~~~~~~~~~\n"
+        + nome 
+        + ", $ " 
+        + String.format("%.2f", preco) 
+        + ", " 
+        + quantidade 
+        + " unidades \nTotal: $ "
+        + String.format("%.2f", valorTotalEmEstoque())
+        + "\n~~~~~~~~~~~~~~~~~~~~\n";
+        
     }
+
 
 }
