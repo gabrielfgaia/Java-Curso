@@ -1,18 +1,9 @@
-## Getting Started
-
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Fazer um programa para ler os dados de um produto em estoque (nome, preço e
+quantidade no estoque). Em seguida:
+• Mostrar os dados do produto (nome, preço, quantidade no estoque, valor total no
+estoque)
+• Realizar uma entrada no estoque e mostrar novamente os dados do produto
+• Realizar uma saída no estoque e mostrar novamente os dados do produto
+Para resolver este problema, você deve criar
+uma CLASSE conforme projeto ao lado:
+veja exemplo na próxima página
