@@ -1,0 +1,16 @@
+public double passou(){
+
+        if (notaSoma(nota1,nota2,nota3) <= (57)){
+
+            System.out.printf("Não passou.\nFaltam: %.2f", notaSoma(nota1, nota2, nota3) - (57) );
+            
+
+        } else {
+
+            System.out.println("Passou");
+
+        }
+
+        return 0;
+
+    }
