@@ -8,33 +8,40 @@ public class App {
     public static void main(String[] args) {
     
         Scanner sc = new Scanner(System.in);
-        Produto produto = new Produto();
-    
+        
+        
+        Produto produto1 = new Produto("", 0, 0);
+
         System.out.println("Digite o nome do produto: ");
-        produto.nome = sc.nextLine();
+        String nome = sc.next();
+        produto1.setNome(nome);
 
         System.out.println("Digite o preço do produto");
-        produto.preco = sc.nextDouble();
-    
+        double preco = sc.nextDouble();
+        produto1.setPreco(preco);
+        
         System.out.println("Digite a quantidade do produto: ");
-        produto.quantidade = sc.nextInt();
+        int quantidade = sc.nextInt();
+        produto1.setQuantidade(quantidade);
 
-        System.out.println("\n\nDados iniciais" + produto.toString());
+
+        System.out.println("\n\nDados iniciais" + produto1.toString());
     
         // Adicionar produtos ao estoque
         System.out.println("Quantidade que desejar adicionar: ");
         int quantidadeAdd = sc.nextInt();
-        produto.adicionarProdutos(quantidadeAdd);
-        System.out.println("\n\nAtualizado: " + produto.toString());
+        produto1.adicionarProdutos(quantidadeAdd);
+        System.out.println("\n\nAtualizado: " + produto1.toString());
 
         
         // Remover produtos do estoque se necessário
         System.out.println("Quantidade que deseja remover do estoque: ");
         int quantidadeRem = sc.nextInt();
-        produto.removerProdutos(quantidadeRem);
-        System.out.println("\n\nAtualizado: " + produto.toString());
+        produto1.removerProdutos(quantidadeRem);
+        System.out.println("\n\nAtualizado: " + produto1.toString());
 
-    
+        System.out.println(produto1);
+        
         sc.close();
     }
 }
